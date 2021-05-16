@@ -1,6 +1,6 @@
 application:
-  name: GIVE_A_NAME_TO_YOUR_APP
-  project: GIVE_A_PROJECT_NAME
+  name: DOXAT
+  project: DOXAT
   publicly_accessible: true
   storage: # qovery will attach automatically a SSD storage on /srv/app
     - name: data
@@ -9,7 +9,7 @@ application:
       mount_point: /srv/app
 databases:
 - type: postgresql # qovery will create a managed PostgreSQL database
-  version: 12
+  version: 11
   name: psql
 routers:
 - name: main
