@@ -1,22 +1,15 @@
+---
 application:
-  name: DOXAT
-  project: DOXAT
-  publicly_accessible: true
-  storage: # qovery will attach automatically a SSD storage on /srv/app
-    - name: data
-      type: ssd
-      size: 5GB
-      mount_point: /srv/app
+  name: "doxat"
+  project: "doxat"
+  organization: "QoveryCommunity"
 databases:
-- type: postgresql # qovery will create a managed PostgreSQL database
-  version: 12
-  name: psql
+- type: "POSTGRESQL"
+  name: "doxat"
+  version: "12"
 routers:
-- name: main
-  #custom_domains: # optional: only if you want to use your domain
-  #- branch: master
-  #  domain: admin.doxat.ba
+- name: "main-doxat"
   routes:
-  - application_name: strapi
+  - application_name: "doxat"
     paths:
-    - /*
+    - "/*"
