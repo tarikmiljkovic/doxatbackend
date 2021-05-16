@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/projektis",
+      "handler": "projekti.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projektis/count",
+      "handler": "projekti.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projektis/:id",
+      "handler": "projekti.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projektis",
+      "handler": "projekti.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/projektis/:id",
+      "handler": "projekti.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/projektis/:id",
+      "handler": "projekti.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

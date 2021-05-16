@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/softver",
+      "handler": "softver.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/softver",
+      "handler": "softver.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/softver",
+      "handler": "softver.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
